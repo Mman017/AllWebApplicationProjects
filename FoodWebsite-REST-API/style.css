@@ -1,0 +1,481 @@
+/* ----->
+	@Author: Molines, Emmanuel D.
+	@Author: Parnacio, Homard
+	@Batuyong Genesis
+	@Version: 1.0
+<----- */
+
+/* -----> Universal Selectors<----- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+	text-decoration:none;
+}
+
+html {
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+body {
+	background-color: #b6b6b6 ;
+}
+/* -----> End of Universal Selectors<----- */
+
+
+/* -----> Header Section<----- */
+#header {
+background-color: #212F3C;
+padding: 15px;
+text-align: center;
+overflow-x: hidden;
+}
+
+#header  li { 
+	display: inline;
+	padding-left: 45px;
+} 
+#header  li a{
+	color: 	#FFFFFF;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: "Montserrat";
+	padding: 13px;
+	transition: .5s ease;
+	top: -1px;
+}
+#header  li a:hover{
+	color: royalblue;
+}
+
+#header  ul #contactUs a {
+	color: #fff;
+	background-color: royalblue;
+	background-size: 5px;
+	border-radius: 30px;
+	float: right;
+	position: relative;
+	transition: .5s ease;
+}
+#header  ul #contactUs a:hover{
+	background-color: #42EADDFF;
+}
+
+#header  ul img {
+	width: 130px;
+	float: left;
+	margin-top: auto;
+}
+/* -----> End of Header Section<----- */
+
+/* -----> Search section<----- */
+#search {
+	margin-top: 20px;
+	text-align:center;
+}
+
+
+#search  input {
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px #000000;
+	font-size: 1.6rem;
+	background-color: #FFFFFF;
+
+  }
+  
+/* -----> End of Search section<----- */
+
+
+/* -----> Slider section<----- */
+#slider .slideshow {
+	max-width: 700px;
+	border: 10px solid #FFFFFF;
+	margin: 15px auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 10px 10px grey;
+}
+
+#slider .slideshow .right-slide, .slideshow .left-slide {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #444444; 
+	border-radius: 50%;
+	color: #FFFFFF;
+	font-size: 18px;
+	top:50%;
+	cursor: pointer;
+	margin-top: -20px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+#slider .slideshow .right-slide:hover, .slideshow .left-slide:hover {
+	box-shadow: 0px 0px 10px  #000000;
+	background-color: #42EA;
+}
+
+#slider .slideshow .left-slide {
+	left: 20px;
+}
+
+#slider .slideshow .right-slide {
+	right: 20px;
+}
+
+
+
+#slider .slideshow .slide-image .photo img {
+	max-width: 100%;
+	display: block;
+	animation: zoom .7s ease;
+}
+
+#slider .slideshow .slide-image .photo {
+	display: none;
+}
+
+#slider .slideshow .slide-image .photo.active{
+	display: block;
+}
+
+@keyframes zoom {
+	0% {transform: scale(2); opacity: 0;}
+	100% {transform: scale(1); opacity: 1;}
+}
+/* -----> End of Slider section<----- */
+
+
+/* -----> Search Filtering<----- */
+#filter {
+background-color: none;
+padding: 15px;
+text-align: center;
+overflow-x: hidden;
+}
+
+#filter li { 
+	display: inline;
+	padding-left: 45px;
+} 
+#filter li a{
+	color: 	#FFFFFF;
+	font-size: 20px;
+	text-decoration: none;
+	font-family: "Montserrat";
+	padding: 13px;
+	transition: .5s ease;
+	top: -1px;
+}
+#filter li a:hover{
+	color: royalblue;
+}
+/* -----> End of Search Filtering<----- */
+
+
+
+/* -----> API container section<----- */
+#food {
+  margin-top: 100px;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#food .container {
+  width: 100%;
+  height: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#food .search-result {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+}
+#food .item {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #132743;
+  padding: 15px;
+  overflow: hidden;
+}
+#food .item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+#food .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#food .search-result .title {
+  color: whitesmoke;
+  margin: 20px 10px 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#food .item-data {
+  color: whitesmoke;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+}
+#food .container.initial .brand {
+  font-size: 7rem;
+}
+#food .container.initial form {
+  max-width: 800px;
+}
+#food .container.initial form input {
+  padding: 20px;
+  font-size: 3rem;
+}
+
+#food .view-btn {
+	display: inline-block;
+	padding: 10px 10px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid royalBlue;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+#food .view-btn:hover {
+	color: white;
+	background-color: royalBlue;
+}
+/* -----> End of API container<----- */
+
+
+/* -----> Footer section<----- */
+#footer {
+  background-color: rgb(33, 47, 60);
+}
+
+#footer .container {
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+}
+#footer .brand h1 {
+	color: white;
+	font-weight: 700;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+
+}
+#footer h2 {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 500;
+	letter-spacing: .1rem;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	margin-bottom: 25px;
+	display: flex;
+
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+
+#footer .social-item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+#footer p {
+	color: white;
+	font-size: 1rem;
+}
+
+/* -----> End of Section Footer <----- */
+
+
+/* -----> Style for foodSearch.html<----- */
+
+.searchBar {
+	width: 100%;
+	margin: 40px auto; 
+	max-width: 300px;
+  }
+
+
+  .searchBar input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px #000000;
+	font-size: 1.6rem;
+	background-color: #FFFFFF;
+	display: inline-block;
+  }
+
+  .containerBox {
+	margin-top: 50px;
+	width: 100%;
+	display: grid;
+	grid-gap: 25px;
+	grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+	margin-bottom: 50px;
+	padding: 30px;
+  }
+
+  .containerContent {
+	width: 100%;
+  	border-radius: 25px;
+  	background-color: #132743;
+  	padding: 25px;
+	overflow: hidden;  
+  }
+
+  .containerContent img {
+	width: 100%;
+	height: 200px;
+	border-radius: 4px;
+	border: 3px solid #FFFFFF;
+	box-shadow: 8px 8px royalblue;
+  }
+
+  .containerContent h3 {
+	color: whitesmoke;
+	margin: 20px 10px 0 0;
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+  }
+
+  .containerContent p {
+	color: whitesmoke;
+	display: block;
+	font-size: 1.3rem;	
+	letter-spacing: 0.05rem;
+	line-height: 2rem;
+	margin-top: -5px;
+  }
+
+  .containerContent a {
+	color: #fff;
+	background-color: royalblue;
+	background-size: 15px;
+	border-radius: 20px;
+	float: right;
+	position: relative;
+	transition: .5s ease;
+	padding: 13px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-size: 1.2rem;
+  }
+
+  .containerContent a:hover {
+	background-color: #42EADDFF;
+  }
+/* -----> End of Style for foodSearch.html<----- */
+
+
+
+/* -----> Media Query for mobile phones<----- */
+@media (max-width: 768px) {
+  .search-result {
+    grid-gap: 10px;
+  }
+  .container.initial .brand {
+    font-size: 4rem;
+  }
+  .container.initial form {
+    max-width: 500px;
+  }
+  .container.initial form input {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+	#header  li a{
+		font-size: 8px;
+		text-decoration: none;
+		font-family: "Montserrat";
+		padding: 1px;
+		transition: .5s ease;
+		top: -1px;
+	}
+
+	#header  ul img {
+		width: 80px;
+	}
+	
+	#header  ul #contactUs a {
+		display:none;
+	}
+
+	#filter {
+	padding: 1px;
+
+	}
+	#filter li a{
+		font-size: 7px;
+		padding: 1px;
+	}
+	
+	
+	#food .search-result {
+	  grid-gap: 15px;
+	  grid-template: auto / repeat(auto-fit, minmax(150px, 1fr));
+	}
+	#food .item {
+		width: 100%;
+	}
+	#food .item img {
+	  height: 150px;
+
+	}
+	#food .search-result .title {
+	  font-size: 1.4rem;
+	  font-weight: 300;
+	}
+	
+	#food .item-data {
+	  margin-top: 5px;
+	  font-size: 1rem;
+	  letter-spacing: 0.03rem;
+	  line-height: 1rem;
+	}
+	
+	
+}
+/* ----->End of Media Query for mobile phones<----- */
+
+

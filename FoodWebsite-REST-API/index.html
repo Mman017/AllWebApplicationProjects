@@ -1,0 +1,121 @@
+<!-- 
+	@Author: Molines, Emmanuel D.
+	@Parnacio, Homard
+	@Version: 1.0
+ -->	
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FoodService</title>
+  
+
+</head>
+<body>	
+
+  <!-- Header Navigation Bar -->	
+ 	  <section id="header">
+ 		<nav>
+        	<ul class="menu">
+        		<li><img src="./img/logo.png" alt="Vector X logo"></li>
+        		<li><a href="index.html">FOOD RECIPE</a></li>
+        		<li><a href="foodVideo.html">FOOD VIDEOS</a></li>
+        		<li id="contactUs"><a href="#contacts">Contact Us</a></li>
+		
+        	</ul>
+		</nav>
+	  </section>
+  <!-- End of Header Navigation Bar -->	
+	  
+	<!-- Search section -->	
+	 <section id="search">
+		  <form>
+			<input class="searchIn" type="text" placeholder="Search specific dish...">	
+		</form>
+	  </section>
+	<!-- End of Search section -->	 
+	
+	<!-- Image slideshow-->
+	  <section id="slider">
+		 <div class="slideshow">
+		 
+			<div class="slide-image">
+				<div class="photo active">
+					<img src="./img/1.png">	
+				</div>
+				<div class="photo">
+					<img src="./img/2.png">	
+				</div>
+				<div class="photo">
+					<img src="./img/3.png">	  
+				</div>
+			</div>
+		
+			 <!--slider-show buttons-->
+			 <div class="right-slide">-></div>
+			 <div class="left-slide"><-</div>
+		</div>
+	  </section>
+	<!-- End of Image slideshow-->
+	 
+	 <!--Search Filtering-->
+	  <section id="filter">
+			<nav>
+				<ul class="menu">
+					<li onclick="sFunction()";><a href="#food">CHICKEN</a></li>	
+					<li onclick="bFunction()";><a href="#food">BEEF</a></li>
+					<li onclick="pFunction()";><a href="#food">PORK</a></li>
+					<li onclick="fFunction()";><a href="#food">FISH</a></li>
+					<li onclick="vFunction()";><a href="#food">VEGAN</a></li>
+				</ul>
+			</nav>  
+	  </section>
+ <!--End of Search Filtering-->
+
+
+	 <!--Api Data Contentainer-->
+	  <section id="food">
+		<div class="container initial">
+		  <div class="search-result">
+			<!-- 
+				Generated API Content 
+			</div> -->
+		  </div>
+		</div>
+	  </section>
+	 <!--End of Api Data Contentainer-->
+	  
+	 <!-- Footer -->
+	  <section id="footer">
+		<div class="footer container">
+		  <div class="brand"><h1>VECTOR X</h1></div>		
+		  <h2>YOUR FOOD SEARCH ENGINE</h2>
+		  <div class="social-icon">	
+			<div class="social-item">
+			  <a href="#"><img src="./img/gmailIcon.png" alt="img"/></a>
+			</div>
+			<div class="social-item">
+			  <a href="#"><img src="./img/fbIcon.png"/></a>
+			</div>
+			<div class="social-item">
+			  <a href="#"><img src="./img/phone.png"/></a>
+			</div>
+			<div class="social-item">
+			  <a href="#"><img src="./img/address.png"/></a>
+			</div>
+		  </div>
+		  <p>Copyright © 2020 Vector X inc. All rights reserved</p>
+		</div>
+	  </section>
+	 <!-- End of Footer -->
+  
+  
+   <!-- javascript -->
+  <script src="./main.js"></script>
+    <!-- javascript -->
+	
+</body>
+</html>
